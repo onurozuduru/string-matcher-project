@@ -1,5 +1,5 @@
-# **string-matcher-project**
-----------------------------
+string-matcher-project
+======================
 Project for Formal Languages & Automata Theory course.
 
 This was my second grade Formal Languages & Automata Theory course's project.
@@ -9,8 +9,8 @@ I used [WindowBuilder](https://eclipse.org/windowbuilder/) to create UI for this
 I hope it is helpful for your works.
 
 Follow me on,
-: 	github: https://github.com/onurozuduru
-:	twitter: https://twitter.com/OnurOzuduru
+  - github: https://github.com/onurozuduru
+  - twitter: https://twitter.com/OnurOzuduru
 
 ## **Project Description**
 

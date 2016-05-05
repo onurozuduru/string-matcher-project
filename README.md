@@ -10,7 +10,7 @@ I hope it is helpful for your works.
 
 Follow me on,
   - github: https://github.com/onurozuduru
-  - twitter: https://twitter.com/OnurOzuduru
+  - twitter: [@OnurOzuduru](https://twitter.com/OnurOzuduru)
 
 ## **Project Description**
 
@@ -25,20 +25,20 @@ In this project you will implement two algorithms for string matching.
 
 The first one is called *Naive-String-Matching* and the pseudocode is given below:
 
-![Naive-String-Matching](http://www2.hawaii.edu/~suthers/courses/ics311s14/Notes/Topic-23/code-naive-string-matcher.jpg)
+![Naive-String-Matching](/algorithms/naive_string_matcher.png)
 
 The naive algorithm finds all valid shifts using a loop that checks the condition `P[1 . . m] == T[s+1 . . s+m]` for each of the n - m + 1 possible values of s. Figure below portrays the naive string matching procedure as sliding a “template” containing the pattern over the text, noting for which shifts all of the characters on the template equal the corresponding characters in the text. The for loop of `lines 3–5` considers each possible shift explicitly. The test in `line 4` determines whether the current shift is valid; this test implicitly loops to check corresponding character positions until all positions match successfully or a mismatch is found.
 `Line 5` prints out each valid shift s.
 
 The second algorithm is called *Finite-Automata-Matcher* and the pseudocode is given below:
 
-![Finite-Automata-Matcher](http://www2.hawaii.edu/~suthers/courses/ics311s14/Notes/Topic-23/code-finite-automaton-matcher.jpg)
+![Finite-Automata-Matcher](/algorithms/finite_automaton_matcher.png)
 
 The pattern to be matched is represented by the transition function **δ**. The text is given to the automaton as input and the automaton reads the text character by character and changes states according to its transition function. When the automaton enters into the accepting state in prints a message. The length of the pattern is m, the set of states Q is {0, 1, . . ., m}, the start state is 0, and the only accepting state is state m. For the Finite-Automata-Matcher algorithm to work the transition function δ has to be computed.
 
 The following algorithm *Compute-Transition-Function(P, Σ)* computes given a the pattern P and the alphabet Σ.
 
-![Compute-Transition-Function](http://www2.hawaii.edu/~suthers/courses/ics311s14/Notes/Topic-23/code-compute-transition-function.jpg)
+![Compute-Transition-Function](/algorithms/compute_transition_function.png)
 
 The nested loops beginning on `lines 2 and 3` consider all states q and all characters a, and `lines 4–8` set δ(q, a) to be the largest k such that P k ⊐ P q a. The code starts with the largest conceivable value of k which is min(m, q + 1). It then decreases k until P k ⊐ P q a, which must eventually occur, since P 0 = ε is a suffix of every string.
 We say that a string w is a suffix of a string x, denoted w ⊐ x, if x = yw for some y ∈ Σ*.
@@ -82,4 +82,4 @@ You will be given a pattern and a text file and output the number of occurrences
 
 **Source for images:**
 
-  * http://www2.hawaii.edu/~suthers/courses/ics311s14/Notes/Topic-23.html
+  * _I copied them from the original project file._
